@@ -1,50 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+    <meta name="keyword" content="Python, Jave, JavaScript">
+    <meta name="description" content="Landing Page">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="content content1">
-            <div class="paragraph">PARALLAX WEBSITE</div>
+    <header class="bg-dark-blue">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="heading-small">Kadir Yıldırım</h1>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Eğitimler</a></li>
+                    <li><a href="#courses">Kurslar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="section section1">
-            <h2>Section One</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsam mollitia praesentium illum adipisci distinctio, recusandae laudantium consectetur, quidem autem iure nihil? Ab placeat quae dolorem illo nulla tempora recusandae corporis consectetur culpa possimus sapiente, officiis amet explicabo impedit aut beatae perferendis neque architecto nam voluptatibus ut minus? Dicta unde quam maxime tenetur ipsam rerum voluptate modi, reprehenderit nemo libero incidunt neque nesciunt iure eos porro ut totam ad. Sint, aliquid commodi similique perspiciatis repellat beatae exercitationem inventore pariatur laboriosam voluptas quod tempora voluptatem unde iusto in. Soluta suscipit nostrum, explicabo laborum ad autem modi perferendis ipsum. Aperiam, repellendus rem.</p>
+    </header>
+
+    <section id="home">
+
+        <img src="./images/image1.jpg" alt="Kadir Yıldırım">
+
+        <div class="name text-center">
+            <h2 class="heading-big">Kadir YILDIRIM</h2>
+            <p>Computer Engineer</p>
         </div>
-    </div>
-    <div class="container">
-        <div class="content content2">
-            <div class="paragraph">IMAGE TWO TEXT</div>
+
+        <a href="#courses" class="btn btn-primary">Kurslara Git</a>
+    </section>
+
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium"> Eğitimler </h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Sınıf İçi Eğitimler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla.</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Online İçerikler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla.</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Konferanslar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla.</p>
+            </article>
         </div>
-        <div class="section section2">
-            <h2>Section Two</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsam mollitia praesentium illum adipisci distinctio, recusandae laudantium consectetur, quidem autem iure nihil? Ab placeat quae dolorem illo nulla tempora recusandae corporis consectetur culpa possimus sapiente, officiis amet explicabo impedit aut beatae perferendis neque architecto nam voluptatibus ut minus? Dicta unde quam maxime tenetur ipsam rerum voluptate modi, reprehenderit nemo libero incidunt neque nesciunt iure eos porro ut totam ad. Sint, aliquid commodi similique perspiciatis repellat beatae exercitationem inventore pariatur laboriosam voluptas quod tempora voluptatem unde iusto in. Soluta suscipit nostrum, explicabo laborum ad autem modi perferendis ipsum. Aperiam, repellendus rem.</p>
+    </section>
+    <section id="courses">
+        <h3 class="text-center heading-medium">Kurslar</h3>
+        <div class="container">
+            <div class="courses">
+
+                <div class="course">
+                    <div class="course-image">
+                        <img src="./images/python.jpg" alt="python" width="300px" height="200px">
+                        <span>%90 İndirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Python
+                        </div>
+                        <div class="description">
+                            Komple Python Geliştirici Kursu
+                        </div>
+                        <div class="instructor">Kadir Yıldırım</div>
+                        <div class="rating">4.6| (7000 Oylama)</div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-image">
+                        <img src="./images/java.jpg" alt="python" width="300px" height="200px">
+                        <span>%90 İndirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Java
+                        </div>
+                        <div class="description">
+                            Komple Java Geliştirici Kursu
+                        </div>
+                        <div class="instructor">Kadir Yıldırım</div>
+                        <div class="rating">4.6| (7000 Oylama)</div>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course-image">
+                        <img src="./images/javascript.jpg" alt="python" width="300px" height="200px">
+                        <span>%90 İndirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            Javascript
+                        </div>
+                        <div class="description">
+                            Komple Javascript Geliştirici Kursu
+                        </div>
+                        <div class="instructor">Kadir Yıldırım</div>
+                        <div class="rating">4.6| (7000 Oylama)</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="content content3">
-            <div class="paragraph">IMAGE THREE TEXT</div>
+    </section>
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulaşın</h4>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="İsim">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="name" id="name" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="form-control" rows="5"
+                        placeholder="Mesajınız.."></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">Gönder</button>
+            </form>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
         </div>
-        <div class="section section3">
-            <h2>Section Three</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsam mollitia praesentium illum adipisci distinctio, recusandae laudantium consectetur, quidem autem iure nihil? Ab placeat quae dolorem illo nulla tempora recusandae corporis consectetur culpa possimus sapiente, officiis amet explicabo impedit aut beatae perferendis neque architecto nam voluptatibus ut minus? Dicta unde quam maxime tenetur ipsam rerum voluptate modi, reprehenderit nemo libero incidunt neque nesciunt iure eos porro ut totam ad. Sint, aliquid commodi similique perspiciatis repellat beatae exercitationem inventore pariatur laboriosam voluptas quod tempora voluptatem unde iusto in. Soluta suscipit nostrum, explicabo laborum ad autem modi perferendis ipsum. Aperiam, repellendus rem.</p>
-        </div>
-    </div>
-    <div class="content content1">
-        <div class="paragraph">CODEROOTER <sup>@riginal</sup>   </div>
-    </div>
-    <div class="container">
-        <div class="content content2">
-            <div class="paragraph">IMAGE TWO TEXT</div>
-        </div>
-        <div class="section section2">
-            <h2>Section Two</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsam mollitia praesentium illum adipisci distinctio, recusandae laudantium consectetur, quidem autem iure nihil? Ab placeat quae dolorem illo nulla tempora recusandae corporis consectetur culpa possimus sapiente, officiis amet explicabo impedit aut beatae perferendis neque architecto nam voluptatibus ut minus? Dicta unde quam maxime tenetur ipsam rerum voluptate modi, reprehenderit nemo libero incidunt neque nesciunt iure eos porro ut totam ad. Sint, aliquid commodi similique perspiciatis repellat beatae exercitationem inventore pariatur laboriosam voluptas quod tempora voluptatem unde iusto in. Soluta suscipit nostrum, explicabo laborum ad autem modi perferendis ipsum. Aperiam, repellendus rem.</p>
-        </div>
-    </div>
+    </footer>
 </body>
+
 </html>
